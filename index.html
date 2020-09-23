@@ -11,32 +11,59 @@
         <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <!-- My CSS -->
         <link rel="stylesheet" href="css/styles.css">
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
         <title>Login - LOGO HERE</title>
     </head>
     <body id="bootstrap_overrides">
-        <!-- Temp for navigation purposes -->
-        <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-            <div class="container"><a class="navbar-brand logo" href="index.html">LOGO HERE</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse"
-                    id="navcol-1">
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="home.html">Home <i class='bx bx-home'></i></a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="messages.html">Messages <i class='bx bx-message-minus'></i></a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="account.html">YourAccountName <i class='bx bx-cog'></i></a></li>
-                    </ul>
+        <section class="login" id="login">
+            <ul class="box-area">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="title-logo">
+                <h1>LOGO HERE</h1>
+            </div>
+            <div class="login-container focused">
+                <h2 class="login-title">Sign In</h2>
+                <form class="login-form" method="POST" action="home.html">
+                    <input type="text" name="username" placeholder="Username" class="login-input" required>
+                    <input type="password" name="password" placeholder="Password" class="login-input" required>
+                    <input type="submit" value="Login" class="login-button">
+                    <label class="login-label">or</label>
+                </form>
+                <div class="newaccount-button-container">
+                    <button class="login-button newaccount-button">Create an Account</button>
                 </div>
             </div>
-        </nav>
-
-        <section class="login" id="login">
-            <div class="login-container">
-                <h1 class="login-logo">LOGO HERE</h1>
+            <div class="createaccount-container">
+                <h2 class="createaccount-title">Create Account</h2>
+                <form class="createaccount-form" method="POST" action="home.html">
+                    <input type="text" name="username" placeholder="Username" class="createaccount-input" required>
+                    <input type="password" name="password" placeholder="Password" class="createaccount-input" required>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" class="createaccount-input" required>
+                    <input type="submit" value="Create" class="createaccount-button">
+                    <label class="createaccount-label">or</label>
+                </form>
+                <div class="back-button-container">
+                    <button class="createaccount-button back-button">Back</button>
+                </div>
             </div>
         </section>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- JavaScript -->
+        <script src="js/main.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
