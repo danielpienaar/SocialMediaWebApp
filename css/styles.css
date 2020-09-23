@@ -101,6 +101,11 @@ body {
 .nav-link {
     border: 1px solid transparent;
     border-radius: 25px;
+    transition-duration: .3s;
+}
+#bootstrap_overrides .nav-link:hover {
+    color: var(--first-color);
+    transition-duration: .3s;
 }
 .nav-link i {
     position: relative;
@@ -123,11 +128,6 @@ body {
     }
     .nav {
         margin-top: 16px;
-    }
-    .nav-item:hover {
-        border-radius: 25px;
-        background-color:rgba(0, 0, 0, 0.1);
-        background-clip: padding-box;
     }
     .nav-link i {
         display: inline-flex;
