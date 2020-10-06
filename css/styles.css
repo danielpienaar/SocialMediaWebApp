@@ -163,6 +163,7 @@ h1 {
     transform: translate(-50%, -100%);
 }
 .title-logo-heading h1 {
+    display: inline-block;
     font-weight: 800;
 }
 .z-layer:not(:first-child) {
